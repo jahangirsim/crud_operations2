@@ -43,24 +43,24 @@ class _UserScreenState extends State<UserScreen> {
                     ),
                     title: Wrap(
                       children: [
-                        Text('Id:${userList[index].id}' ?? ''),
-                        SizedBox(
+                        Text('Id:${userList[index].id}'),
+                        const SizedBox(
                           width: 16,
                         ),
-                        Text('Name:'),
+                        Text('Name: ${userList[index].name}'),
                       ],
                     ),
-                    subtitle: const Wrap(
+                    subtitle:  Wrap(
                       children: [
-                        Text('Email:'),
-                        SizedBox(
+                        Text('Email: ${userList[index].email}'),
+                        const SizedBox(
                           width: 16,
                         ),
-                        Text('Gender:'),
-                        SizedBox(
+                        Text('Gender: ${userList[index].gender}'),
+                        const SizedBox(
                           width: 16,
                         ),
-                        Text('Status:'),
+                        Text('Status: ${userList[index].status}'),
                       ],
                     ),
                     trailing: PopupMenuButton<PopupMenuType>(
